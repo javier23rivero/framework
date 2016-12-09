@@ -1,0 +1,8 @@
+<div class="contenedor">
+	<div class="login">
+		<h2 class="welcome-user">Bienvenido : <?php echo $_SESSION["username"];?></h2>
+	</div>
+</div>
+
+
+

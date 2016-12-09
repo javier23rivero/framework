@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Money trancking <?php 
+		if(!empty($title)){
+			echo $title;
+		}
+		?>
+ </title>
+	<link rel="stylesheet" type="text/css" href="<?php echo $_layoutParams["route_css"]?>/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo $_layoutParams["route_css"]?>/main.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo $_layoutParams["route_css"]?>/bootstrap.min.css">
+	<script type="text/javascript" src="<?php echo $_layoutParams["route_js"]?>/vendor/modernizr-2.8.3.min.js"></script>
+
+	
+	
+
+	
+</head>
+<body>
+	<div id="container" class="container">
+	<header>
+		<nav>
+			<ul>
+				<li><a href="">Inicio</a></li>
+				<li><a href="">Servicio</a></li>
+				<li><a href="">Productos</a></li>
+				<li><a href="">Nosotros</a></li>
+				<li><a href="">Contactos</a></li>
+			</ul>
+		</nav>
+		<div id="login">
+		<p>Hola : <?php echo $_SESSION["username"];?>   <a href="<?php echo APP_URL."/users/logout";?>">Salir</a></p>
+		<p>Sesion :  <?php echo $_SESSION["type_name"];?></p>
+		</div>
+	</header>
+
+
+	<!-- <img src="<?php //echo $_layoutParams["route_img"]?>/social.png"> -->
+		<!-- //nav>ul>li>*50>a>{Item} -->

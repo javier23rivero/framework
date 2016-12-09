@@ -1,0 +1,39 @@
+/* li{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+#container{
+	width: 90%;
+	margin: 0 auto;
+	background-color: #50BEBE;
+}
+
+ nav ul li{
+	display: inline;
+}
+
+nav ul li a{
+	text-align: none;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+th, td {
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+th{
+	background-color: #4CAF50;
+	color: white;
+}
+
+@media (min-width: 1200px){
+	.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+	    width: 30%;
+	}
+} */

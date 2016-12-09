@@ -1,0 +1,20 @@
+/* li{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*/)
+#container{
+	width: 90%;
+	margin: 0 auto;
+	background-color: #50BEBE;
+}
+.contenedor{
+	    margin-top: 65px;
+}
+.login{
+	margin:0px auto;
+}
+.welcome-user{
+	text-align: center;
+}

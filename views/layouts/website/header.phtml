@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Framework Básico</title>
+
+
+	<link rel="stylesheet" type="text/css" href="<?php echo $_layoutParams["route_bootstrap_css"]?>/bootstrap-responsive.css">
+	<!--Agregamos la libreria que se encuentra en la carpeta bootstrap-->
+	<link rel="stylesheet" type="text/css" href="<?php echo $_layoutParams["route_bootstrap_css"]?>/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo $_layoutParams["route_bootstrap_css"]?>/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo $_layoutParams["route_bootstrap_awesome"]?>/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo $_layoutParams["route_css"]?>/style.css">
+	
+	
+	
+
+	
+</head>
+<body>
+  <!-- Fixed navbar -->
+  <nav id="menu3" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <!-- <a class="navbar-brand" href="#">
+        <img alt="Logo" src=".." class="img-circle logo"> -->
+
+        
+      </a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="<?php echo APP_URL."/pages";?>">Inicio</a></li>
+            <li><a href="<?php echo APP_URL."/users";?>">Users</a></li>
+            <li><a href="<?php echo APP_URL."/types";?>">Types</a></li>
+            <li><a href="<?php echo APP_URL."/categories";?>">Categories</a></li>
+            <li><a href="<?php echo APP_URL."/accounts";?>">Accounts</a></li>
+            <li><a href="<?php echo APP_URL."/transactions";?>">Transactions</a></li>
+            <!-- <li><a href="">Servicio</a></li>
+                        <li><a href="">Productos</a></li>
+                        <li><a href="">Nosotros</a></li>
+                        <li><a href="">Contactos</a></li> -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="<?php echo APP_URL."/users/logout";?>">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        	<li class="dropdown">
+        		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"  aria-expanded="false">
+        			<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+        			<?php echo $_SESSION["username"];?>
+        			<span class="caret"></span>
+        		</a>
+        		<ul class="dropdown-menu">
+	              <li><a href="<?php echo APP_URL."/users/logout";?>">Logout</a></li>
+	            </ul>
+        	</li>
+             
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>  
+  </nav>
+	<div id="container" class="container">
+	<!-- <header>
+		<nav>
+			<ul>
+				<li><a href="">Inicio</a></li>
+				<li><a href="">Servicio</a></li>
+				<li><a href="">Productos</a></li>
+				<li><a href="">Nosotros</a></li>
+				<li><a href="">Contactos</a></li>
+			</ul>
+		</nav>
+	</header> -->
+	<!-- <img src="<?php //echo $_layoutParams["route_img"]?>/social.png"> -->
+		<!-- //nav>ul>li>*50>a>{Item} -->
